@@ -7,3 +7,6 @@ How to install ruby on rails setup?
 
 Tutorials are in following site:
 http://guides.rubyonrails.org/getting_started.html
+
+Use following link to download IDE for Ruby developement.
+http://download.cnet.com/Aptana-Studio
