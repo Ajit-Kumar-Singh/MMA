@@ -10,3 +10,9 @@ http://guides.rubyonrails.org/getting_started.html
 
 Use following link to download IDE for Ruby developement.
 http://download.cnet.com/Aptana-Studio
+
+After downloading it :
+Click on Project explorer and browse to the folder and then promote it as project
+It will create a connection.
+Click on connection and then link it to local file system.
+It will show the project
