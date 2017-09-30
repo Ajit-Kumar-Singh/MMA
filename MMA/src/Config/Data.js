@@ -2,8 +2,8 @@ export const me = {
   "gender": "male",
   "name": {
     "title": "mr",
-    "first": "lance",
-    "last": "thomas"
+    "first": "Ana",
+    "last": "Bradley"
   },
   "location": {
     "street": "6942 first street",
@@ -11,7 +11,11 @@ export const me = {
     "state": "new hampshire",
     "postcode": 30411
   },
+  "work": "Microsoft India Pvt Limited",
+  "education":"Bahoot Jyada padha hua",
+  "interest":"Laundiyabaazi aur bas aisho aaram",
   "email": "lance.thomas@example.com",
+  "aboutMe": "Zindgo jhand hai phir bhi ghamand hai aur kya ukhaad logey jo tumko nahi bataaye toh",
   "login": {
     "username": "organicmouse687",
     "password": "frodo1",
