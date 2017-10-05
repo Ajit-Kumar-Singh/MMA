@@ -1,0 +1,2 @@
+class MmaInterest < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class MmaLocation < ApplicationRecord
+end

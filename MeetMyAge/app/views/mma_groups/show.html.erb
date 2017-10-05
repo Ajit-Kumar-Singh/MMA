@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mma_group.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @mma_group.description %>
+</p>
+
+<p>
+  <strong>Group type:</strong>
+  <%= @mma_group.group_type %>
+</p>
+
+<p>
+  <strong>Icon:</strong>
+  <%= @mma_group.icon %>
+</p>
+
+<p>
+  <strong>Group size:</strong>
+  <%= @mma_group.group_size %>
+</p>
+
+<p>
+  <strong>Interests:</strong>
+  <%= @mma_group.interests %>
+</p>
+
+<p>
+  <strong>Images:</strong>
+  <%= @mma_group.images %>
+</p>
+
+<%= link_to 'Edit', edit_mma_group_path(@mma_group) %> |
+<%= link_to 'Back', mma_groups_path %>

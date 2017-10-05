@@ -5,35 +5,29 @@ import { ScrollView, StyleSheet ,Image,View,StatusBar,
 
 import { Tile, List, ListItem, Button } from 'react-native-elements';
 import { me } from '../Config/Data';
-import Icon from 'react-native-vector-icons';
-import ViewPager from 'react-native-viewpager';
-
-
-  const deviceWidth = Dimensions.get('window').width;
-
-  const IMGS = [
-    require('../../img/ajit.jpg'),
-    require('../../img/bg.jpg'),
-    require('../../img/bg1.jpg'),
-    require('../../img/bg2.jpg'),
-  ];
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import IconCity from 'react-native-vector-icons/MaterialIcons';
 
   class Profile extends Component {
+
     constructor(props){
       super(props);
-      const dataSource = new ViewPager.DataSource({
-        pageHasChanged: (p1, p2) => p1 !== p2,
-      });
+
       this.state ={
-        dataSource: dataSource.cloneWithPages(IMGS),
         page: 0,
-        userProfile: {}
+        userProfile: {},
+        profileIdSet : false,
+        id :  '',
       };
-      this.renderPage = this.renderPage.bind(this);
     };
 
-    componentDidMount() {
-      fetch('https://vast-badlands-97711.herokuapp.com/mma_user_profiles/3.json')
+    componentDidMount()
+    {
+      this.state.id = this.props.navigation.state.params.id;
+      console.log(this.state.id);
+      const urlFetch = 'https://vast-badlands-97711.herokuapp.com/mma_user_profiles/'+this.state.id +'.json'
+
+      fetch(urlFetch)
       .then((response) => response.json())
       .then((responseJson) => {
         this.setState({
@@ -44,42 +38,51 @@ import ViewPager from 'react-native-viewpager';
         console.error(error);
       });
     }
-    renderPage(item) {
-      const { navigate } = this.props.navigation;
-      return (
-        <Image
-        source= {item}
-        style={styles.page} />
-      );
-    }
 
     render() {
       const { state,navigate } = this.props.navigation;
       return (
-        <View style = {styles.container}>
-        <ViewPager
-        style={this.props.style}
-        dataSource={this.state.dataSource}
-        renderPage={this.renderPage}
-        />
-        <ScrollView style={styles.textView}>
-          <View style = {styles.editProfile}>
-          <Text style={styles.ProfileNames}>{this.state.userProfile.name}</Text>
-          <TouchableHighlight
-            onPress={() => navigate("Detail",this.state.userProfile)}>
-            <Image source={require('../../img/edit.png')} style = {styles.image}/>
+      <View style={styles.container}>
+          <View style={styles.imageContainer}>
+            <Image source = {require('../../img/ajit.jpg')}  style={styles.image}/>
+            <View style ={styles.profileContainer}>
+              <Text style={styles.ProfileNames}>{this.state.userProfile.name}</Text>
+              <TouchableHighlight
+                onPress={() => navigate("Detail",this.state.userProfile)}>
+              <Icon name="account-edit" size={25} color='#0093AF' />
           </TouchableHighlight>
         </View>
-
+      </View>
+      <View style ={styles.infoSection}>
         <View style={styles.PaddingBetween}>
           <Text style={styles.textPersonalInfo}>Personal Information</Text>
         </View>
+
+        <View style={styles.textStyle}>
+          <Icon name="face-profile" size={25} color='#0093AF' />
         <Text style={styles.text}>{this.state.userProfile.about_me}</Text>
-        <Text style={styles.text}>Interest-{this.state.userProfile.mobile_number}</Text>
-        <Text style={styles.text}>Education-{this.state.userProfile.education}</Text>
-        <Text style={styles.text}>Work-{this.state.userProfile.work}</Text>
-        <Text style={styles.text}>City-{this.state.userProfile.location_id}</Text>
-      </ScrollView>
+        </View>
+
+        <View  style={styles.textStyle}>
+          <Icon name="email" size={25} color='#0093AF' />
+        <Text style={styles.text}>{this.state.userProfile.email}</Text>
+        </View>
+
+        <View  style={styles.textStyle}>
+          <Icon name="school" size={25} color='#0093AF' />
+        <Text style={styles.text}>{this.state.userProfile.education}</Text>
+        </View>
+
+        <View  style={styles.textStyle}>
+          <Icon name="worker" size={25} color='#0093AF' alignSelf='center'/>
+        <Text style={styles.text}>{this.state.userProfile.work}</Text>
+        </View>
+
+        <View  style={styles.textStyle}>
+          <IconCity name="my-location" size={25} color='#0093AF' />
+        <Text style={styles.text}>{this.state.userProfile.location_id}</Text>
+        </View>
+      </View>
     </View>
       )
     };
@@ -91,18 +94,41 @@ import ViewPager from 'react-native-viewpager';
       flex: 1,
       flexDirection: 'column',
     },
-    image: {
-      flex:2,
-      width:40,
-      height:40,
+    profileContainer:
+    {
+      flexDirection:'row',
+      alignItems:'center',
+      justifyContent:'center'
+    },
+  imageContainer:
+   {
+    flex:2,
+    flexDirection:'column',
+    alignItems: 'center',
+    justifyContent :'center',
+    backgroundColor : 'white'
+   },
+   infoSection:{
+    flex:4,
+    backgroundColor:'white'
+   },
+  image: {
+    width: 75,
+    height: 75,
+    borderRadius: 50
   },
   editProfile: {
     flex:1,
     flexDirection: 'row'
   },
-    viewpager: {
-      flex: 1,
-    },
+textStyle:
+{
+  borderBottomWidth :1,
+  borderColor:'#E5E4E2',
+  flexDirection:'row',
+  height:40,
+  alignItems:'center',
+},
     page: {
       flex: 1,
       width: null,
@@ -116,9 +142,7 @@ import ViewPager from 'react-native-viewpager';
     text: {
       textAlign: 'left',
       fontSize: 15,
-      paddingTop:10,
-      paddingBottom:10,
-      paddingLeft:10,
+      paddingLeft:15,
       color:'black',
       fontFamily:'Circular'
     },
@@ -131,10 +155,7 @@ import ViewPager from 'react-native-viewpager';
       color:'black',
       fontWeight:'bold'
     },
-
     ProfileNames: {
-      flex:8,
-      textAlign: 'left',
       fontSize: 20,
       fontWeight:'bold',
       paddingBottom:10,

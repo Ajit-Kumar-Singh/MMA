@@ -1,0 +1,2 @@
+module MmaGroupsHelper
+end

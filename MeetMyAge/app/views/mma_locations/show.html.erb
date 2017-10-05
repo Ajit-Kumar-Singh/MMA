@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>City:</strong>
+  <%= @mma_location.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @mma_location.state %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @mma_location.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @mma_location.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_mma_location_path(@mma_location) %> |
+<%= link_to 'Back', mma_locations_path %>

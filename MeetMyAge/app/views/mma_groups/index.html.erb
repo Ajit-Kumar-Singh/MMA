@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mma Groups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Group type</th>
+      <th>Icon</th>
+      <th>Group size</th>
+      <th>Interests</th>
+      <th>Images</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mma_groups.each do |mma_group| %>
+      <tr>
+        <td><%= mma_group.name %></td>
+        <td><%= mma_group.description %></td>
+        <td><%= mma_group.group_type %></td>
+        <td><%= mma_group.icon %></td>
+        <td><%= mma_group.group_size %></td>
+        <td><%= mma_group.interests %></td>
+        <td><%= mma_group.images %></td>
+        <td><%= link_to 'Show', mma_group %></td>
+        <td><%= link_to 'Edit', edit_mma_group_path(mma_group) %></td>
+        <td><%= link_to 'Destroy', mma_group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mma Group', new_mma_group_path %>

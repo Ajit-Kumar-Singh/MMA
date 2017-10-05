@@ -1,0 +1,52 @@
+<%= form_with(model: mma_group, local: true) do |form| %>
+  <% if mma_group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mma_group.errors.count, "error") %> prohibited this mma_group from being saved:</h2>
+
+      <ul>
+      <% mma_group.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :mma_group_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :mma_group_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :group_type %>
+    <%= form.text_field :group_type, id: :mma_group_group_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :icon %>
+    <%= form.number_field :icon, id: :mma_group_icon %>
+  </div>
+
+  <div class="field">
+    <%= form.label :group_size %>
+    <%= form.text_field :group_size, id: :mma_group_group_size %>
+  </div>
+
+  <div class="field">
+    <%= form.label :interests %>
+    <%= form.text_field :interests, id: :mma_group_interests %>
+  </div>
+
+  <div class="field">
+    <%= form.label :images %>
+    <%= form.text_field :images, id: :mma_group_images %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

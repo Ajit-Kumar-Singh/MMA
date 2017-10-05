@@ -1,0 +1,32 @@
+<%= form_with(model: mma_interest, local: true) do |form| %>
+  <% if mma_interest.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mma_interest.errors.count, "error") %> prohibited this mma_interest from being saved:</h2>
+
+      <ul>
+      <% mma_interest.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :mma_interest_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :mma_interest_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_enabled %>
+    <%= form.check_box :is_enabled, id: :mma_interest_is_enabled %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

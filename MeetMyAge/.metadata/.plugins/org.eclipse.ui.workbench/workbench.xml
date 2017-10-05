@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="39" version="2.0">
+<workbenchAdvisor/>
+<window height="940" maximized="true" width="1200" x="294" y="294">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="138" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="169" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="100" y="22"/>
+<coolItem id="com.aptana.ui.globalActionSet" itemType="typeToolBarContribution" x="184" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="123" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.aptana.editor.erb.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.yaml" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.css" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.js" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.json" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.ruby" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1504075134024" focus="true" label="Workspace - Web">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+<part id="21"/>
+<part id="22"/>
+<part id="23"/>
+<part id="24"/>
+<part id="25"/>
+<part id="26"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.aptana.editor.ruby" name="application_mailer.rb" partName="application_mailer.rb" title="application_mailer.rb" tooltip="C:\MMA\MeetMyAge\app\mailers\application_mailer.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/mailers/application_mailer.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="102" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="Rakefile" partName="Rakefile" title="Rakefile" tooltip="C:\MMA\MeetMyAge\Rakefile" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/Rakefile"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.json" name="package.json" partName="package.json" title="package.json" tooltip="C:\MMA\MeetMyAge\package.json" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/package.json"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="67" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="Gemfile.lock" partName="Gemfile.lock" title="Gemfile.lock" tooltip="C:\MMA\MeetMyAge\Gemfile.lock" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/Gemfile.lock"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="221" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.js" name="application.js" partName="application.js" title="application.js" tooltip="C:\MMA\MeetMyAge\app\assets\javascripts\application.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/assets/javascripts/application.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.js" name="cable.js" partName="cable.js" title="cable.js" tooltip="C:\MMA\MeetMyAge\app\assets\javascripts\cable.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/assets/javascripts/cable.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.css" name="application.css" partName="application.css" title="application.css" tooltip="C:\MMA\MeetMyAge\app\assets\stylesheets\application.css" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/assets/stylesheets/application.css"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="Gemfile" partName="Gemfile" title="Gemfile" tooltip="C:\MMA\MeetMyAge\Gemfile" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/Gemfile"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="498" selectionTopPixel="651"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="seeds.rb" partName="seeds.rb" title="seeds.rb" tooltip="C:\MMA\MeetMyAge\db\seeds.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/db/seeds.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.yaml" name="database.yml" partName="database.yml" title="database.yml" tooltip="C:\MMA\MeetMyAge\config\database.yml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/config/database.yml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="535" selectionTopPixel="270"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="routes.rb" partName="routes.rb" title="routes.rb" tooltip="C:\MMA\MeetMyAge\config\routes.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/config/routes.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="131" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="application_controller.rb" partName="application_controller.rb" title="application_controller.rb" tooltip="C:\MMA\MeetMyAge\app\controllers\application_controller.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/controllers/application_controller.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="149" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="application_record.rb" partName="application_record.rb" title="application_record.rb" tooltip="C:\MMA\MeetMyAge\app\models\application_record.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/models/application_record.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="mma_user_profile.rb" partName="mma_user_profile.rb" title="mma_user_profile.rb" tooltip="C:\MMA\MeetMyAge\app\models\mma_user_profile.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/models/mma_user_profile.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="edit.html.erb" partName="edit.html.erb" title="edit.html.erb" tooltip="C:\MMA\MeetMyAge\app\views\mma_user_profiles\edit.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/edit.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="index.html.erb" partName="index.html.erb" title="index.html.erb" tooltip="C:\MMA\MeetMyAge\app\views\mma_user_profiles\index.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/index.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="application.html.erb" partName="application.html.erb" title="application.html.erb" tooltip="C:\MMA\MeetMyAge\app\views\layouts\application.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/views/layouts/application.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="96" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="_mma_user_profile.json.jbuilder" partName="_mma_user_profile.json.jbuilder" title="_mma_user_profile.json.jbuilder" tooltip="C:\MMA\MeetMyAge\app\views\mma_user_profiles\_mma_user_profile.json.jbuilder" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/_mma_user_profile.json.jbuilder"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="_form.html.erb" partName="_form.html.erb" title="_form.html.erb" tooltip="C:\MMA\MeetMyAge\app\views\mma_user_profiles\_form.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/_form.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="application_helper.rb" partName="application_helper.rb" title="application_helper.rb" tooltip="C:\MMA\MeetMyAge\app\helpers\application_helper.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/helpers/application_helper.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="mma_group_memberships_helper.rb" partName="mma_group_memberships_helper.rb" title="mma_group_memberships_helper.rb" tooltip="C:\MMA\MeetMyAge\app\helpers\mma_group_memberships_helper.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/helpers/mma_group_memberships_helper.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="mma_groups_helper.rb" partName="mma_groups_helper.rb" title="mma_groups_helper.rb" tooltip="C:\MMA\MeetMyAge\app\helpers\mma_groups_helper.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/helpers/mma_groups_helper.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="connection.rb" partName="connection.rb" title="connection.rb" tooltip="C:\MMA\MeetMyAge\app\channels\application_cable\connection.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/channels/application_cable/connection.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="85" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="mma_locations_helper.rb" partName="mma_locations_helper.rb" title="mma_locations_helper.rb" tooltip="C:\MMA\MeetMyAge\app\helpers\mma_locations_helper.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/helpers/mma_locations_helper.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="new.html.erb" partName="new.html.erb" title="new.html.erb" tooltip="C:\MMA\MeetMyAge\app\views\mma_user_profiles\new.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/new.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="show.html.erb" partName="show.html.erb" title="show.html.erb" tooltip="C:\MMA\MeetMyAge\app\views\mma_user_profiles\show.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/show.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1000" selectionTopPixel="1572"/>
+</editor>
+<editor activePart="true" focus="true" id="com.aptana.editor.ruby" name="mma_group_memberships_controller.rb" partName="mma_group_memberships_controller.rb" title="mma_group_memberships_controller.rb" tooltip="C:\MMA\MeetMyAge\app\controllers\mma_group_memberships_controller.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/MMA/MeetMyAge/app/controllers/mma_group_memberships_controller.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2433" selectionTopPixel="1851"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="com.aptana.snippets.ui.views.SnippetsView" partName="Snippets">
+<viewState/>
+</view>
+<view id="com.aptana.terminal.views.terminal:MeetMyAge" partName="MeetMyAge">
+<viewState>
+<title>MeetMyAge</title>
+<workingDirectory>C:\MMA\MeetMyAge\MeetMyAge</workingDirectory>
+</viewState>
+</view>
+<view id="com.aptana.samples.ui.SamplesView" partName="Samples">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<columnWidths org.eclipse.ui.ide.locationField="195" org.eclipse.ui.ide.markerType="195" org.eclipse.ui.ide.pathField="260" org.eclipse.ui.ide.resourceField="195" org.eclipse.ui.ide.severityAndDescriptionField="650"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="com.aptana.explorer.view" partName="App Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="MeetMyAge">
+<project name="MeetMyAge">&#x0A;<selection>&#x0A;<element path="/MeetMyAge"/>
+</selection>
+</project>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="com.aptana.editor.ruby" activePerspective="com.aptana.ui.WebPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Web"/>
+<alwaysOnActionSet id="com.aptana.browser.actionSet"/>
+<alwaysOnActionSet id="com.aptana.ruby.debug.ui.RubyDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="com.aptana.editor.common.presentation"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="com.aptana.js.debug.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.presentation"/>
+<alwaysOnActionSet id="com.aptana.ui.globalActionSet"/>
+<alwaysOnActionSet id="com.aptana.terminal.actionSet"/>
+<show_view_action id="com.aptana.browser.views.webbrowser"/>
+<show_view_action id="com.aptana.explorer.view"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="com.aptana.ui.io.remoteview"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="com.aptana.samples.ui.SamplesView"/>
+<show_view_action id="com.aptana.snippets.ui.views.SnippetsView"/>
+<show_view_action id="com.aptana.terminal.views.terminal"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.aptana.webserver.ui.view"/>
+<new_wizard_action id="com.aptana.editor.php.NewPHPProjectWizard"/>
+<new_wizard_action id="com.aptana.ui.wizards.NewWebProject"/>
+<new_wizard_action id="com.aptana.ruby.core.ui.rubyProjectWizard"/>
+<new_wizard_action id="com.aptana.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<new_wizard_action id="org.radrails.rails.ui.projectWizard"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="com.aptana.explorer.view"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="com.aptana.terminal.views.terminal:MeetMyAge"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="com.aptana.samples.ui.SamplesView"/>
+<view id="com.aptana.snippets.ui.views.SnippetsView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="com.aptana.explorer.view" label="App Explorer"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="com.aptana.ui.io.remoteview" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7495712" ratioLeft="874" ratioRight="292" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25814044" ratioLeft="658" ratioRight="1891" relationship="2" relative="left"/>
+<info folder="true" part="terminalArea" ratio="0.5833333" ratioLeft="693" ratioRight="495" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="com.aptana.terminal.views.terminal:MeetMyAge" label="MeetMyAge"/>
+<page content="com.aptana.terminal.views.terminal" label="LabelNotFound"/>
+<page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@c8c6d9" ratio="0.7493671" ratioLeft="592" ratioRight="198" relationship="4" relative="left">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="com.aptana.samples.ui.SamplesView" label="Samples"/>
+<page content="com.aptana.snippets.ui.views.SnippetsView" label="Snippets"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/C:/MMA/MeetMyAge/Gemfile.lock"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" uri="file:/C:/MMA/MeetMyAge/app/assets/javascripts/application.js"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" uri="file:/C:/MMA/MeetMyAge/app/assets/javascripts/cable.js"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" uri="file:/C:/MMA/MeetMyAge/app/assets/stylesheets/application.css"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/MMA/MeetMyAge/Gemfile"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/MMA/MeetMyAge/Rakefile"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.json" uri="file:/C:/MMA/MeetMyAge/package.json"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/MMA/MeetMyAge/db/seeds.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/C:/MMA/MeetMyAge/Gemfile.lock"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.yaml" uri="file:/C:/MMA/MeetMyAge/config/database.yml"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/MMA/MeetMyAge/config/routes.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/MMA/MeetMyAge/app/controllers/application_controller.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/MMA/MeetMyAge/app/models/application_record.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/MMA/MeetMyAge/app/models/mma_user_profile.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/edit.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/index.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/C:/MMA/MeetMyAge/app/views/layouts/application.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/_mma_user_profile.json.jbuilder"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/_form.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/MMA/MeetMyAge/app/helpers/application_helper.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/MMA/MeetMyAge/app/helpers/mma_group_memberships_helper.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/MMA/MeetMyAge/app/helpers/mma_groups_helper.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/MMA/MeetMyAge/app/channels/application_cable/connection.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/MMA/MeetMyAge/app/helpers/mma_locations_helper.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/new.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/show.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/C:/MMA/MeetMyAge/app/controllers/mma_group_memberships_controller.rb"/>
+</editors>
+<item historyLabel="Gemfile.lock" index="0">
+<position info="not_deleted" x="68" y="0"/>
+</item>
+<item historyLabel="application.js" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="cable.js" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="application.css" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Gemfile" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Rakefile" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="package.json" index="6">
+<position info="not_deleted" x="67" y="0"/>
+</item>
+<item historyLabel="Gemfile" index="4">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="seeds.rb" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Gemfile" index="4">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="Gemfile.lock" index="8">
+<position info="not_deleted" x="221" y="0"/>
+</item>
+<item historyLabel="database.yml" index="9">
+<position/>
+</item>
+<item historyLabel="routes.rb" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="application_controller.rb" index="11">
+<position info="not_deleted" x="159" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="10">
+<position info="not_deleted" x="159" y="0"/>
+</item>
+<item historyLabel="application_controller.rb" index="11">
+<position info="not_deleted" x="149" y="0"/>
+</item>
+<item historyLabel="Gemfile" index="4">
+<position info="not_deleted" x="370" y="0"/>
+</item>
+<item historyLabel="application_controller.rb" index="11">
+<position info="not_deleted" x="149" y="0"/>
+</item>
+<item historyLabel="application_record.rb" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="mma_user_profile.rb" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="10">
+<position info="not_deleted" x="159" y="0"/>
+</item>
+<item historyLabel="edit.html.erb" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.html.erb" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="10">
+<position info="not_deleted" x="189" y="0"/>
+</item>
+<item historyLabel="application.html.erb" index="16">
+<position/>
+</item>
+<item historyLabel="Gemfile" index="4">
+<position info="not_deleted" x="778" y="0"/>
+</item>
+<item historyLabel="application.html.erb" index="16">
+<position info="not_deleted" x="291" y="13"/>
+</item>
+<item historyLabel="Gemfile" index="4">
+<position info="not_deleted" x="1735" y="0"/>
+</item>
+<item historyLabel="application.html.erb" index="16">
+<position info="not_deleted" x="96" y="19"/>
+</item>
+<item historyLabel="Gemfile" index="4">
+<position info="not_deleted" x="498" y="0"/>
+</item>
+<item historyLabel="database.yml" index="9">
+<position info="not_deleted" x="535" y="0"/>
+</item>
+<item historyLabel="application_controller.rb" index="11">
+<position info="not_deleted" x="149" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="10">
+<position info="not_deleted" x="131" y="14"/>
+</item>
+<item historyLabel="database.yml" index="9">
+<position info="not_deleted" x="535" y="0"/>
+</item>
+<item historyLabel="application_controller.rb" index="11">
+<position info="not_deleted" x="149" y="0"/>
+</item>
+<item historyLabel="_mma_user_profile.json.jbuilder" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="_form.html.erb" index="18">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="application_helper.rb" index="19">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="mma_group_memberships_helper.rb" index="20">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="mma_groups_helper.rb" index="21">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="connection.rb" index="22">
+<position info="not_deleted" x="85" y="0"/>
+</item>
+<item historyLabel="application_controller.rb" index="11">
+<position info="not_deleted" x="149" y="0"/>
+</item>
+<item historyLabel="mma_locations_helper.rb" index="23">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="mma_user_profile.rb" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="application.html.erb" index="16">
+<position info="not_deleted" x="96" y="19"/>
+</item>
+<item historyLabel="new.html.erb" index="24">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="show.html.erb" index="25">
+<position info="not_deleted" x="1000" y="0"/>
+</item>
+<item historyLabel="mma_user_profile.rb" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="application_controller.rb" index="11">
+<position info="not_deleted" x="149" y="0"/>
+</item>
+<item active="true" historyLabel="mma_group_memberships_controller.rb" index="26">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="mma_group_memberships_controller.rb" tooltip="C:\MMA\MeetMyAge\app\controllers\mma_group_memberships_controller.rb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/controllers/mma_group_memberships_controller.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="show.html.erb" tooltip="C:\MMA\MeetMyAge\app\views\mma_user_profiles\show.html.erb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/show.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="new.html.erb" tooltip="C:\MMA\MeetMyAge\app\views\mma_user_profiles\new.html.erb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/new.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="mma_locations_helper.rb" tooltip="C:\MMA\MeetMyAge\app\helpers\mma_locations_helper.rb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/helpers/mma_locations_helper.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="connection.rb" tooltip="C:\MMA\MeetMyAge\app\channels\application_cable\connection.rb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/channels/application_cable/connection.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="mma_groups_helper.rb" tooltip="C:\MMA\MeetMyAge\app\helpers\mma_groups_helper.rb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/helpers/mma_groups_helper.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="mma_group_memberships_helper.rb" tooltip="C:\MMA\MeetMyAge\app\helpers\mma_group_memberships_helper.rb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/helpers/mma_group_memberships_helper.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="application_helper.rb" tooltip="C:\MMA\MeetMyAge\app\helpers\application_helper.rb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/helpers/application_helper.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="_form.html.erb" tooltip="C:\MMA\MeetMyAge\app\views\mma_user_profiles\_form.html.erb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/_form.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="_mma_user_profile.json.jbuilder" tooltip="C:\MMA\MeetMyAge\app\views\mma_user_profiles\_mma_user_profile.json.jbuilder">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/_mma_user_profile.json.jbuilder"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="application.html.erb" tooltip="C:\MMA\MeetMyAge\app\views\layouts\application.html.erb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/views/layouts/application.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="index.html.erb" tooltip="C:\MMA\MeetMyAge\app\views\mma_user_profiles\index.html.erb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/index.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="edit.html.erb" tooltip="C:\MMA\MeetMyAge\app\views\mma_user_profiles\edit.html.erb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/views/mma_user_profiles/edit.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="mma_user_profile.rb" tooltip="C:\MMA\MeetMyAge\app\models\mma_user_profile.rb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/models/mma_user_profile.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="application_record.rb" tooltip="C:\MMA\MeetMyAge\app\models\application_record.rb">
+<persistable uri="file:/C:/MMA/MeetMyAge/app/models/application_record.rb"/>
+</file>
+</mruList>
+</workbench>

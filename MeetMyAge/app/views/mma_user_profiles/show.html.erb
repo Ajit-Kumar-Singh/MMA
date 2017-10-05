@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mma_user_profile.name %>
+</p>
+
+<p>
+  <strong>About me:</strong>
+  <%= @mma_user_profile.about_me %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @mma_user_profile.gender %>
+</p>
+
+<p>
+  <strong>Education:</strong>
+  <%= @mma_user_profile.education %>
+</p>
+
+<p>
+  <strong>Work:</strong>
+  <%= @mma_user_profile.work %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @mma_user_profile.age %>
+</p>
+
+<p>
+  <strong>Mobile number:</strong>
+  <%= @mma_user_profile.mobile_number %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @mma_user_profile.email %>
+</p>
+
+<p>
+  <strong>Is mobile verifed:</strong>
+  <%= @mma_user_profile.is_mobile_verifed %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @mma_user_profile.image %>
+</p>
+
+<p>
+  <strong>User type:</strong>
+  <%= @mma_user_profile.user_type %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @mma_user_profile.location_id %>
+</p>
+
+<p>
+  <strong>Auth token:</strong>
+  <%= @mma_user_profile.auth_token %>
+</p>
+
+<%= link_to 'Edit', edit_mma_user_profile_path(@mma_user_profile) %> |
+<%= link_to 'Back', mma_user_profiles_path %>

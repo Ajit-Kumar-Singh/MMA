@@ -1,0 +1,2 @@
+class MmaUserProfile < ApplicationRecord
+end

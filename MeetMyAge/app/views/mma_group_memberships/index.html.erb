@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mma Group Memberships</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Joined on</th>
+      <th>Last login</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mma_group_memberships.each do |mma_group_membership| %>
+      <tr>
+        <td><%= mma_group_membership.profile_id %></td>
+        <td><%= mma_group_membership.joined_on %></td>
+        <td><%= mma_group_membership.last_login %></td>
+        <td><%= link_to 'Show', mma_group_membership %></td>
+        <td><%= link_to 'Edit', edit_mma_group_membership_path(mma_group_membership) %></td>
+        <td><%= link_to 'Destroy', mma_group_membership, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mma Group Membership', new_mma_group_membership_path %>

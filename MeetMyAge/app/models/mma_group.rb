@@ -1,0 +1,2 @@
+class MmaGroup < ApplicationRecord
+end

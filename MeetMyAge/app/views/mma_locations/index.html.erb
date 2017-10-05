@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mma Locations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>City</th>
+      <th>State</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mma_locations.each do |mma_location| %>
+      <tr>
+        <td><%= mma_location.city %></td>
+        <td><%= mma_location.state %></td>
+        <td><%= mma_location.latitude %></td>
+        <td><%= mma_location.longitude %></td>
+        <td><%= link_to 'Show', mma_location %></td>
+        <td><%= link_to 'Edit', edit_mma_location_path(mma_location) %></td>
+        <td><%= link_to 'Destroy', mma_location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mma Location', new_mma_location_path %>

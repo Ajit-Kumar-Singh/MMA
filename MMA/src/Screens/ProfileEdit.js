@@ -8,9 +8,14 @@ import {
   Image,
   Button,
   ScrollView,
+  TouchableHighlight,
+  Picker,
 } from 'react-native';
 
 import Form from 'react-native-form';
+import PhotoUpload from 'react-native-photo-upload';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import ImagePicker from 'react-native-image-crop-picker';
 
 class ProfileEdit extends React.Component {
   constructor(props) {
@@ -20,9 +25,36 @@ class ProfileEdit extends React.Component {
                     name:this.props.navigation.state.params.name,
                     work:this.props.navigation.state.params.work,
                     education:this.props.navigation.state.params.education,
-                    aboutMe:this.props.navigation.state.params.aboutMe};
+                    location_id:this.props.navigation.state.params.location_id,
+                    aboutMe:this.props.navigation.state.params.aboutMe,
+                     isModalVisible : false,
+                   language:''};
     }
-
+    callFunc = ()=>{
+       if(this.isModalVisible){
+         this.setState({isModalVisible:false});
+       }else{
+         this.setState({isModalVisible:true});
+       }
+    }
+  _onPhotoUpload = () =>
+  {
+    const options = {
+      quality: 1.0,
+      maxWidth: 50,
+      maxHeight: 50,
+      storageOptions: {
+              skipBackup: true,
+                  },
+                };
+                ImagePicker.openPicker({
+                  width: 300,
+                  height: 400,
+                  cropping: true
+                }).then(image => {
+                  console.log(image);
+                });
+  }
   _submitForm()
     {
       const data ={
@@ -40,18 +72,23 @@ class ProfileEdit extends React.Component {
           "location_id":8,
           "auth_token":"",
       }
+      console.log('falana');
+      console.log(this.props.navigation.state.params.id);
+      const urlEdit = 'https://vast-badlands-97711.herokuapp.com/mma_user_profiles/'+ (this.props.navigation.state.params.id).toString() +'/';
 
-      fetch('https://vast-badlands-97711.herokuapp.com/mma_user_profiles/3/', {
+      fetch(urlEdit, {
         method: "PUT",
         headers:{ 'Accept': 'application/json',
         'Content-Type': 'application/json',},
         body:  JSON.stringify(data)
       })
       .then((response) => {
-        if(response.status == 200)
-        {
-          this.props.navigation.navigate("Profile");
-        }
+        if (response.ok) {
+          response.json().then(data => {
+          console.log(data) ;
+          this.props.navigation.navigate('Profile',data);
+        });
+      }
       })
       .then(function(data){
         console.log(data);
@@ -62,7 +99,7 @@ class ProfileEdit extends React.Component {
     const {state} = this.props.navigation;
     return (
     <Form ref="form">
-    <ScrollView styles = {styles.containerProfileEdit}>
+    <ScrollView style = {styles.containerProfileEdit}>
       {/* User Will upload photo here*/}
       <View style ={styles.uploadPhoto}>
 
@@ -83,7 +120,7 @@ class ProfileEdit extends React.Component {
         </View>
           <Text style = {styles.infoText}> City </Text>
         <View style = {styles.textInput} >
-          <TextInput underlineColorAndroid="transparent" type="TextInput" name="city" value={this.state.education}  onChangeText={(text) => this.setState({education: text})}/>
+          <TextInput underlineColorAndroid="transparent" type="TextInput" name="city" value={this.state.location_id}  onChangeText={(text) => this.setState({location_id: text})}/>
         </View>
           <Text style = {styles.infoText}> About Me </Text>
         <View style = {styles.textInput}>
@@ -122,6 +159,7 @@ textInput:{
    borderWidth: 0.5,
    borderColor:'green',
 },
+
 infoText:{
   height:30,
   justifyContent:'center',

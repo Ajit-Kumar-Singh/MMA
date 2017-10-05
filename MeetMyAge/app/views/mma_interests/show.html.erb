@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mma_interest.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @mma_interest.description %>
+</p>
+
+<p>
+  <strong>Is enabled:</strong>
+  <%= @mma_interest.is_enabled %>
+</p>
+
+<%= link_to 'Edit', edit_mma_interest_path(@mma_interest) %> |
+<%= link_to 'Back', mma_interests_path %>

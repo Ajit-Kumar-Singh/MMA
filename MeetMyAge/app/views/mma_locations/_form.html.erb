@@ -1,0 +1,37 @@
+<%= form_with(model: mma_location, local: true) do |form| %>
+  <% if mma_location.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mma_location.errors.count, "error") %> prohibited this mma_location from being saved:</h2>
+
+      <ul>
+      <% mma_location.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :mma_location_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state, id: :mma_location_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude, id: :mma_location_latitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude, id: :mma_location_longitude %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

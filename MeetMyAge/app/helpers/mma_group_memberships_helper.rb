@@ -1,0 +1,2 @@
+module MmaGroupMembershipsHelper
+end

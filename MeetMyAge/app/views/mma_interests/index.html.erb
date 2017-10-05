@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mma Interests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Is enabled</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mma_interests.each do |mma_interest| %>
+      <tr>
+        <td><%= mma_interest.name %></td>
+        <td><%= mma_interest.description %></td>
+        <td><%= mma_interest.is_enabled %></td>
+        <td><%= link_to 'Show', mma_interest %></td>
+        <td><%= link_to 'Edit', edit_mma_interest_path(mma_interest) %></td>
+        <td><%= link_to 'Destroy', mma_interest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mma Interest', new_mma_interest_path %>

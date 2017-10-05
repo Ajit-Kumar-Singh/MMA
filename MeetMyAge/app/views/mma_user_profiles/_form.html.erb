@@ -1,0 +1,82 @@
+<%= form_with(model: mma_user_profile, local: true) do |form| %>
+  <% if mma_user_profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mma_user_profile.errors.count, "error") %> prohibited this mma_user_profile from being saved:</h2>
+
+      <ul>
+      <% mma_user_profile.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :mma_user_profile_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :about_me %>
+    <%= form.text_field :about_me, id: :mma_user_profile_about_me %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender, id: :mma_user_profile_gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :education %>
+    <%= form.text_field :education, id: :mma_user_profile_education %>
+  </div>
+
+  <div class="field">
+    <%= form.label :work %>
+    <%= form.text_field :work, id: :mma_user_profile_work %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age, id: :mma_user_profile_age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mobile_number %>
+    <%= form.text_field :mobile_number, id: :mma_user_profile_mobile_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :mma_user_profile_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_mobile_verifed %>
+    <%= form.check_box :is_mobile_verifed, id: :mma_user_profile_is_mobile_verifed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image, id: :mma_user_profile_image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_type %>
+    <%= form.text_field :user_type, id: :mma_user_profile_user_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location_id %>
+    <%= form.number_field :location_id, id: :mma_user_profile_location_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :auth_token %>
+    <%= form.text_field :auth_token, id: :mma_user_profile_auth_token %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

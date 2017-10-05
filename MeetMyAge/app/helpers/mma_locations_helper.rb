@@ -1,0 +1,2 @@
+module MmaLocationsHelper
+end

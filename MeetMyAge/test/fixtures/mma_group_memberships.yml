@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  profile_id: 1
+  joined_on: 2017-09-02
+  last_login: 2017-09-02 18:49:56
+
+two:
+  profile_id: 1
+  joined_on: 2017-09-02
+  last_login: 2017-09-02 18:49:56

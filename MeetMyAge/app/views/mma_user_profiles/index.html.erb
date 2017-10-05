@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mma User Profiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>About me</th>
+      <th>Gender</th>
+      <th>Education</th>
+      <th>Work</th>
+      <th>Age</th>
+      <th>Mobile number</th>
+      <th>Email</th>
+      <th>Is mobile verifed</th>
+      <th>Image</th>
+      <th>User type</th>
+      <th>Location</th>
+      <th>Auth token</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mma_user_profiles.each do |mma_user_profile| %>
+      <tr>
+        <td><%= mma_user_profile.name %></td>
+        <td><%= mma_user_profile.about_me %></td>
+        <td><%= mma_user_profile.gender %></td>
+        <td><%= mma_user_profile.education %></td>
+        <td><%= mma_user_profile.work %></td>
+        <td><%= mma_user_profile.age %></td>
+        <td><%= mma_user_profile.mobile_number %></td>
+        <td><%= mma_user_profile.email %></td>
+        <td><%= mma_user_profile.is_mobile_verifed %></td>
+        <td><%= mma_user_profile.image %></td>
+        <td><%= mma_user_profile.user_type %></td>
+        <td><%= mma_user_profile.location_id %></td>
+        <td><%= mma_user_profile.auth_token %></td>
+        <td><%= link_to 'Show', mma_user_profile %></td>
+        <td><%= link_to 'Edit', edit_mma_user_profile_path(mma_user_profile) %></td>
+        <td><%= link_to 'Destroy', mma_user_profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mma User Profile', new_mma_user_profile_path %>

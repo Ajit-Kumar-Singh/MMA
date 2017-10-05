@@ -1,0 +1,32 @@
+<%= form_with(model: mma_group_membership, local: true) do |form| %>
+  <% if mma_group_membership.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mma_group_membership.errors.count, "error") %> prohibited this mma_group_membership from being saved:</h2>
+
+      <ul>
+      <% mma_group_membership.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :profile_id %>
+    <%= form.number_field :profile_id, id: :mma_group_membership_profile_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :joined_on %>
+    <%= form.date_select :joined_on, id: :mma_group_membership_joined_on %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_login %>
+    <%= form.datetime_select :last_login, id: :mma_group_membership_last_login %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

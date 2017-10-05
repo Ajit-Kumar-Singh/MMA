@@ -100,7 +100,7 @@ _renderItem ({item, index}) {
             />
 		)
   };
-  
+
 }
 var styles=StyleSheet.create({
 	container: {
@@ -123,6 +123,6 @@ var styles=StyleSheet.create({
     width: null,
     height: null,
     resizeMode: 'contain'
-  }, 
+  },
 })
 export default Group;

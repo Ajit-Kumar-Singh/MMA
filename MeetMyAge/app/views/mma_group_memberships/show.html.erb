@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Profile:</strong>
+  <%= @mma_group_membership.profile_id %>
+</p>
+
+<p>
+  <strong>Joined on:</strong>
+  <%= @mma_group_membership.joined_on %>
+</p>
+
+<p>
+  <strong>Last login:</strong>
+  <%= @mma_group_membership.last_login %>
+</p>
+
+<%= link_to 'Edit', edit_mma_group_membership_path(@mma_group_membership) %> |
+<%= link_to 'Back', mma_group_memberships_path %>

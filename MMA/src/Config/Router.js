@@ -1,63 +1,63 @@
 import React from 'react'
 import { TabNavigator, StackNavigator } from 'react-navigation'
-import Icon from 'react-native-vector-icons';
+import Icon from 'react-native-vector-icons/SimpleLineIcons';
 
 import Group from '../Screens/Group';
 import Events from '../Screens/Events';
 import Profile from '../Screens/Profile';
 import ProfileEdit from '../Screens/ProfileEdit';
+import Login from '../Screens/Login';
+
 
 export const stackNav = StackNavigator({
   Profile: {
     screen: Profile,
-    navigationOptions: {
-      title : 'Profile'
-    }
   },
   Detail: {
     screen: ProfileEdit,
-    navigationOptions: ({ navigation }) => ({
-      title: `${navigation.state.params.name.toUpperCase()}`,
-    }),
   },
+},
+{
+   initialRouterName: 'Profile',
 });
+
+
 
 export const Tabs = TabNavigator({
   Group: {
     screen: Group,
     navigationOptions: {
-      tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />,
+      tabBarIcon: ({ tintColor }) => <Icon name="people" size={20} color='#0093AF' backgroundColor='red' />,
+       showIcon: true,
     },
   },
   Events:{
     screen: Events,
     navigationOptions: {
-
-      tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />,
+      tabBarIcon: ({ tintColor }) => <Icon name="social-dribbble" size={20} color='#0093AF' />,
+       showIcon: true,
     },
   },
   Profile: {
     screen: stackNav,
     navigationOptions: {
-     tabBarLabel: 'Profile',
-      tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />,
+      tabBarIcon: ({ tintColor }) => <Icon name="user" size={20} color='#0093AF' />,
+       showIcon: true,
     },
   },
 },
 {
   tabBarPosition: 'bottom',
   swipeEnabled: false,
+  headerMode:'none',
+  header:null,
   tabBarOptions: {
-  labelStyle: {
-      fontSize: 12,
-      color:'black',
-    },
-    tabBarOptions: {
-      activeTintColor: '#e91e63',
-    },
+        showIcon: true,
+        upperCaseLabel: false,
+        showLabel:false,
+        style: {
+          backgroundColor: 'transparent',
+        }
+        },
 
-    style: {
-      backgroundColor: '#CCFFFF',
-    },
-  },
 });
