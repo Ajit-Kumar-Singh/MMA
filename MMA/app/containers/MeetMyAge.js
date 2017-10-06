@@ -23,6 +23,7 @@ const stackNav = StackNavigator({
 },
 {
    initialRouterName: 'Profile',
+   headerMode:'none',
 });
 
 const Tabs = TabNavigator({
@@ -70,6 +71,9 @@ const Tabs = TabNavigator({
     Tabs:{
       screen:Tabs
     }
+  },
+  {
+    headerMode:'none'
   }
 );
 
@@ -81,19 +85,4 @@ class MeetMyAge extends Component {
     }
 }
 
-const styles = StyleSheet.create({
-    wrapper: {
-        marginTop: 20,
-        backgroundColor: '#EF6C00',
-        flex: 1,
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-    text: {
-        fontSize: 20,
-        color: '#01579B'
-    }
-});
 export default MeetMyAge;
-// export default connect(mapStateToProps)(MeetMyAge);

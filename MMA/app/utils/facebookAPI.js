@@ -20,6 +20,7 @@ function getInfo(accessToken) {
               reject('error making request. ' + error);
           } else {
               console.log('Successfully fetching data');
+              console.log(result.id);
               resolve(result);
           }
       }
@@ -29,7 +30,7 @@ function getInfo(accessToken) {
               accessToken: accessToken,
               parameters: {
                   fields: {
-                      string: 'email,name,first_name,middle_name,last_name,birthday'
+                      string: 'email,name,first_name,middle_name,last_name,birthday,picture'
                   }
               }
           },
@@ -52,7 +53,7 @@ export function facebookLogin() {
                     console.log('In AccessToken');
                     console.log(data.accessToken);
                     getInfo(data.accessToken).then((userDetails) => {
-                        resolve(userDetails);
+                        resolve(userDetails,data.accessToken);
                     }).catch((requestError) => {
                         reject(requestError);
                     });

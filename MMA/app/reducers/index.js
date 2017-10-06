@@ -1,3 +1,4 @@
+
 function loginReducer(state = {loading: false, loggedIn: false, error: null}, action) {
     switch (action.type) {
     case 'LOADING':
@@ -46,9 +47,61 @@ function profileReducer(state = { id: null, name: null, email: null}, action) {
     }
 }
 
+function profileFetchReducer(state = { fetching: false, fetched: false, error: null, data:[]}, action) {
+    switch (action.type) {
+    case 'FETCHING':
+        return Object.assign({}, state, {
+          fetching:true,
+
+    });
+    case 'PROFILE_DATA':
+        return Object.assign({}, state, {
+          fetched:true,
+          fetching:false,
+          data:action.profileData
+        });
+
+    case 'ERROR':
+        return Object.assign({}, state, {
+          fetching:false,
+          fetched:false,
+          error:action.err,
+    });
+    default:
+        return state;
+    }
+}
+
+function profileUpdateReducer(state = { fetching: false, fetched: false, error: null, data:[]}, action) {
+    switch (action.type) {
+    case 'FETCHING':
+        return Object.assign({}, state, {
+          fetching:true,
+
+    });
+    case 'PROFILE_DATA':
+        return Object.assign({}, state, {
+          fetched:true,
+          fetching:false,
+          data:action.profileData
+        });
+
+    case 'ERROR':
+        return Object.assign({}, state, {
+          fetching:false,
+          fetched:false,
+          error:action.err,
+    });
+    default:
+        return state;
+    }
+}
+
 export default function reducers(state = {}, action) {
     return {
         login: loginReducer(state.login, action),
-        profile: profileReducer(state.profile, action)
+        profile: profileReducer(state.profile, action),
+        profileData : profileFetchReducer(state.profileData,action),
+        profileUpdatedData:profileUpdateReducer(state.profileData,action),
     };
 }
