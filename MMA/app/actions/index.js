@@ -73,15 +73,31 @@ export function errorsProfile(err) {
     };
 }
 
-export function fetched() {
-    return {
-        type: 'FETCHED_SUCCESS',
-    };
-}
 export function sendProfileData(profileData)
 {
   return{
     type: 'PROFILE_DATA',
+    profileData,
+  }
+}
+
+export function updating() {
+    return {
+        type: 'UPDATING'
+    };
+}
+
+export function errorsProfileUpdate(err) {
+    return {
+        type: 'UPDATING_ERROR',
+        err
+    };
+}
+
+export function updateProfile(profileData)
+{
+  return{
+    type: 'UPDATE_DATA',
     profileData,
   }
 }
@@ -101,12 +117,12 @@ export function fethProfileData(profileId) {
 
   export function update(data,profileId) {
       return dispatch => {
-          dispatch(fetching());
+          dispatch(updating());
               updateProfileData(data,profileId).then((profileData) =>
               {
-                dispatch(sendProfileData(profileData));
+                dispatch(updateProfile(profileData));
           }).catch((err) => {
-              dispatch(errorsProfile(err));
+              dispatch(errorsProfileUpdate(err));
           });
       }
     }

@@ -27,59 +27,64 @@ function mapDispatchToProps(dispatch) {
 
     componentDidMount()
     {
+      console.log('Ky abaat h');
       const {actions,navigation} = this.props;
+        console.log(navigation.state.params);
       actions.fethProfileData(navigation.state.params.id);
+
     }
+
 
     render() {
       const {navigation,actions,profileData} = this.props;
-      return (
-      <View style={styles.container}>
-          <View style={styles.imageContainer}>
-            <View style ={styles.profileContainer}>
-            <Image
-             source={{uri:profileData.data.image}}
-             style={styles.image}
-           />
-              <Text style={styles.ProfileNames}>{profileData.data.name}</Text>
-              <TouchableHighlight
-                onPress={() => navigation.navigate("Detail",profileData.data)}>
-              <Icon name="account-edit" size={25} color='#0093AF' />
-          </TouchableHighlight>
+
+        return (
+        <View style={styles.container}>
+            <View style={styles.imageContainer}>
+              <View style ={styles.profileContainer}>
+              <Image
+               source={{uri:profileData.data.image}}
+               style={styles.image}
+             />
+                <Text style={styles.ProfileNames}>{profileData.data.name}</Text>
+                <TouchableHighlight
+                  onPress={() => navigation.navigate("Detail",profileData.data)}>
+                <Icon name="account-edit" size={25} color='#0093AF' />
+            </TouchableHighlight>
+          </View>
+        </View>
+        <View style ={styles.infoSection}>
+          <View style={styles.PaddingBetween}>
+            <Text style={styles.textPersonalInfo}>Personal Information</Text>
+          </View>
+
+          <View style={styles.textStyle}>
+            <Icon name="face-profile" size={25} color='#0093AF' />
+            <Text style={styles.text}>{profileData.data.about_me}</Text>
+          </View>
+
+          <View  style={styles.textStyle}>
+            <Icon name="email" size={25} color='#0093AF' />
+          <Text style={styles.text}>{profileData.data.email}</Text>
+          </View>
+
+          <View  style={styles.textStyle}>
+            <Icon name="school" size={25} color='#0093AF' />
+          <Text style={styles.text}>{profileData.data.education}</Text>
+          </View>
+
+          <View  style={styles.textStyle}>
+            <Icon name="worker" size={25} color='#0093AF' alignSelf='center'/>
+          <Text style={styles.text}>{profileData.data.work}</Text>
+          </View>
+
+          <View  style={styles.textStyle}>
+            <IconCity name="my-location" size={25} color='#0093AF' />
+          <Text style={styles.text}>{profileData.data.location_id}</Text>
+          </View>
         </View>
       </View>
-      <View style ={styles.infoSection}>
-        <View style={styles.PaddingBetween}>
-          <Text style={styles.textPersonalInfo}>Personal Information</Text>
-        </View>
-
-        <View style={styles.textStyle}>
-          <Icon name="face-profile" size={25} color='#0093AF' />
-        </View>
-        <Text style={styles.text}>{profileData.data.about_me}</Text>
-
-        <View  style={styles.textStyle}>
-          <Icon name="email" size={25} color='#0093AF' />
-        <Text style={styles.text}>{profileData.data.email}</Text>
-        </View>
-
-        <View  style={styles.textStyle}>
-          <Icon name="school" size={25} color='#0093AF' />
-        <Text style={styles.text}>{profileData.data.education}</Text>
-        </View>
-
-        <View  style={styles.textStyle}>
-          <Icon name="worker" size={25} color='#0093AF' alignSelf='center'/>
-        <Text style={styles.text}>{profileData.data.work}</Text>
-        </View>
-
-        <View  style={styles.textStyle}>
-          <IconCity name="my-location" size={25} color='#0093AF' />
-        <Text style={styles.text}>{profileData.data.location_id}</Text>
-        </View>
-      </View>
-    </View>
-      )
+        )
     }
   }
 

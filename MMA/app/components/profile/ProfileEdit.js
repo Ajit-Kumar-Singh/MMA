@@ -24,7 +24,7 @@ import * as actionCreators from '../../actions';
 
 function mapStateToProps(state) {
     return {
-        profileUpdatedData: state.profileData,
+        profileUpdatedData: state.profileUpdatedData,
     };
 }
 
@@ -37,12 +37,9 @@ function mapDispatchToProps(dispatch) {
 class ProfileEdit extends React.Component {
   constructor(props) {
       super(props);
-      this.props.profileUpdatedData.fetching = true;
-      this.props.profileUpdatedData.fetched = false;
       this.state = { name:this.props.navigation.state.params.name,
                     work:this.props.navigation.state.params.work,
                     education:this.props.navigation.state.params.education,
-                    location_id:this.props.navigation.state.params.location_id,
                     aboutMe:this.props.navigation.state.params.aboutMe,
                     };
                   }
@@ -55,24 +52,24 @@ class ProfileEdit extends React.Component {
           "gender":"male",
           "education":this.refs.form.getValues().education,
           "work":this.refs.form.getValues().work,
-          "age":'',
+          "age":21,
           "mobile_number":"",
-          "email":"",
+          "email":this.props.navigation.state.params.email,
           "is_mobile_verifed":'',
-          "image":"",
+          "image":this.props.navigation.state.params.image,
           "user_type":"",
-          "location_id":"",
+          "location_id":8,
           "auth_token":"",
       }
-        actions.update(navigation.state.params.id,data);
+
+        actions.update(data,navigation.state.params.id);
   }
 
   componentWillReceiveProps(nextProps)
   {
-    if(nextProps.profileUpdatedData.fetched)
+    if(nextProps.profileUpdatedData.updated)
     {
-      const {profileUpdatedData,navigation} = this.props;
-      navigation.navigate('Profile',profileUpdatedData.data);
+      this.props.navigation.navigate('Profile',nextProps.profileUpdatedData.data);
     }
   }
 
@@ -98,10 +95,7 @@ class ProfileEdit extends React.Component {
         <View style = {styles.textInput}>
           <TextInput underlineColorAndroid="transparent" type="TextInput" name="education" value={this.state.education}  onChangeText={(text) => this.setState({education: text})}/>
         </View>
-          <Text style = {styles.infoText}> City </Text>
-        <View style = {styles.textInput} >
-          <TextInput underlineColorAndroid="transparent" type="TextInput" name="city" value={this.state.location_id}  onChangeText={(text) => this.setState({location_id: text})}/>
-        </View>
+
           <Text style = {styles.infoText}> About Me </Text>
         <View style = {styles.textInput}>
           <TextInput underlineColorAndroid="transparent" type="TextInput" name="aboutMe" value={this.state.aboutMe}  onChangeText={(text) => this.setState({aboutMe: text})}/>

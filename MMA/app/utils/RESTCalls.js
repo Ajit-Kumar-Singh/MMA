@@ -49,8 +49,14 @@ export function postProfileData(userProfile, accessToken) {
               body:  JSON.stringify(data)
             })
             .then((response) => {
+              console.log('Just i response');
+              console.log(response);
               if (response.ok) {
+                console.log('I am in response.ok');
+                console.log(response);
                 response.json().then(data => {
+                  console.log('I am in json response');
+                  console.log(data);
                 resolve(data);
               });
             }

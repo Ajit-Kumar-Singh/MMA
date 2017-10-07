@@ -72,24 +72,24 @@ function profileFetchReducer(state = { fetching: false, fetched: false, error: n
     }
 }
 
-function profileUpdateReducer(state = { fetching: false, fetched: false, error: null, data:[]}, action) {
+function profileUpdateReducer(state = { updating: false, updated: false, error: null, data:[]}, action) {
     switch (action.type) {
-    case 'FETCHING':
+    case 'UPDATING':
         return Object.assign({}, state, {
-          fetching:true,
+          uodating:true,
 
     });
-    case 'PROFILE_DATA':
+    case 'UPDATE_DATA':
         return Object.assign({}, state, {
-          fetched:true,
-          fetching:false,
+          updated:true,
+          updating:false,
           data:action.profileData
         });
 
-    case 'ERROR':
+    case 'UPDATING_ERROR':
         return Object.assign({}, state, {
-          fetching:false,
-          fetched:false,
+          updating:false,
+          updated:false,
           error:action.err,
     });
     default:
@@ -102,6 +102,6 @@ export default function reducers(state = {}, action) {
         login: loginReducer(state.login, action),
         profile: profileReducer(state.profile, action),
         profileData : profileFetchReducer(state.profileData,action),
-        profileUpdatedData:profileUpdateReducer(state.profileData,action),
+        profileUpdatedData:profileUpdateReducer(state.profileUpdatedData,action),
     };
 }
